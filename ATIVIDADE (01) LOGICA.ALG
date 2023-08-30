@@ -5,29 +5,51 @@ Algoritmo "semnome"
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 30/08/2023
 Var
-   // Seção de Declarações das variávei
-   a: inteiro
-   b: inteiro
-   c: inteiro
-   soma: real
+   // Seção de Declarações das variáveis
+   nome: caracter
+   sexo: caracter
+   estadocivil : caracter
+   anos: inteiro
+
 
 Inicio
-   escreva("Valor do letra A: ")
-   leia(a)
-   escreva("Valor da letra B: ")
-   leia(b)
-   escreva("Valor da letra C: ")
-   leia(c)
+   // Dados de casamento
 
-   //Resultado do valor das LETRAS
+   escreva("Nome completo: ")
+   leia(nome)
+   escreva("Seu sexo: ")
+   leia(sexo)
+   escreva("Seu estado civil: ")
+   leia(estadocivil)
 
-   soma <- a + b
-
-   se (soma > c ) entao
-      escreval("O valor de A + B é maior que C")
+   se (sexo = "feminino") e (estadocivil = "casada")entao
+      escreva("Quantos anos de casada vc tem?: ")
+      leia(anos)
    fimse
-   se (soma < c) entao
-      escreval("O valor de A + B é menor que C")
+   limpatela
+
+   escreval("Seu nome: ", nome)
+   escreval("Seu sexo: ", sexo)
+   escreval("Seu estado civil: ", estadocivil)
+   escreval("Seu anos de casamento: ", anos)
+   limpatela
+
+
+
+   se (sexo = "feminino") e (estadocivil = "solteira")entao
+      escreva("Quantos anos de casada vc tem?: ")
+      leia(anos)
    fimse
+   limpatela
+
+   escreval("Seu nome: ", nome)
+   escreval("Seu sexo: ", sexo)
+   escreval("Seu estado civil: ", estadocivil)
+   escreval("Seu anos de casamento: ", anos)
+
+
+
+
+
 
 Fimalgoritmo
